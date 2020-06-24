@@ -26,56 +26,7 @@ namespace trainingExam
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
             
-        }
-        /* void createMatrix(int row, int col, string filePath)
-         {
-             string path = filePath;
-             StreamWriter f = new StreamWriter(path);
-             int x = 20, y = 20;
-             for(int i=0; i<col; i++)
-             {
-                 for (int j = 0; j < row; j++)
-                 {
-                     TextBox newTextBox = new TextBox();
-                     this.Controls.Add(newTextBox);  
-                     Point position = new Point(x, y);
-                     newTextBox.Location = position;
-                     newTextBox.Width = 20;
-                     newTextBox.Text = "3";
-                     x += 25;
-                     f.Write(newTextBox.Text);
-                     f.Write(".");
-                 }
-                 f.Write(";");
-                 y += 30;
-                 x = 20;
-             }
-             f.Close();
-         }
-         void showMatrix(string filePath)
-         {
-
-             string path = filePath;
-             StreamReader f = new StreamReader(path);
-             string[] cols = f.ReadLine().Split(".\n;".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-             f.BaseStream.Seek(0, SeekOrigin.Begin);
-             string[] rows = f.ReadToEnd().Split(";\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-             f.Close();
-             int x = 20, y = 20, k=0;
-             dataGridView1.RowCount = rows.Length;
-             dataGridView1.ColumnCount = cols.Length;
-             for (int i = 0; i < 5; i++)
-             {
-                 for (int j = 0; j < 4; j++)
-                 {
-                     dataGridView1.Rows[i].Cells[j].Value = "2";
-                     k++;
-                 }
-                 y += 30;
-                 x = 20;
-             }
-             f.Close();
-         }*/
+        } 
         string path = @"D:\Programming\C#\trainingExam\matrix.txt";
         void createMatrix(int n, int m, string pathToFile)
         {
